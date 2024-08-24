@@ -97,6 +97,9 @@ jobs:
       - name: Build hyprland
         run: (/hostrepo/xbps-src -j$(nproc) -s -H ~/hostdir pkg hyprland)
 
+      - name: Build hyprland0.41
+        run: (/hostrepo/xbps-src -j$(nproc) -s -H ~/hostdir pkg hyprland0.41)
+
       - name: Build hyprland-protocols
         run: (/hostrepo/xbps-src -j$(nproc) -s -H ~/hostdir pkg hyprland-protocols)
 
